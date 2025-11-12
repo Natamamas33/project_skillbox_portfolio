@@ -1,0 +1,190 @@
+.gallery {
+  padding-top: 79px;
+  padding-bottom: 81px;
+  background-image: url(../img/gal-fon-1920.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.gallery__wrap {
+  display: flex;
+  width: 100%;
+  margin-right: 0;
+}
+
+.gallery-title {
+  margin-bottom: 20px;
+  color: var(--white);
+}
+
+.gallery__picture {
+  display: flex;
+  width: calc(1150 / 1600 * 100%);
+  margin-right: 0;
+  margin-left: auto;
+}
+
+.gallery__list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 50px;
+}
+
+.gallery__item {
+  width: calc(100% / 3 - 100px / 3);
+}
+
+.gallery__image {
+  display: block;
+  width: 100%;
+}
+
+.gallery__check {
+  display: flex;
+  flex-shrink: 0;
+  flex-direction: column;
+  width: calc(290 / 1600 * 100%);
+  justify-content: flex-end;
+  margin-right: 20px;
+  margin-bottom: 0;
+}
+
+.visible-checkbox {
+  position: relative;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-right: 9px;
+  border: 1px solid;
+  vertical-align: middle;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.check-text {
+  vertical-align: middle;
+  color: var(--white);
+  transition: color 0.3s ease-in-out;
+}
+
+.visible-checkbox::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: var(--violet-li);
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.3s ease-in-out;
+}
+
+.check-label {
+  color: var(--white);
+  padding-top: 0;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+.check-label:hover:not(:focus) {
+  color: var(--violet-li);
+}
+
+.checkbox:checked ~ .visible-checkbox {
+  border-color: var(--violet-li);
+}
+
+.checkbox:checked ~ .visible-checkbox::before {
+  opacity: 1;
+}
+
+.checkbox:focus ~ .visible-checkbox {
+  border-color: var(--violet-li);
+}
+
+.checkbox:checked ~ .check-text {
+  color: var(--violet-li);
+}
+
+.checkbox:focus ~ .check-text {
+  color: var(--violet-li);
+}
+
+@media (max-width: 1024px) {
+  .gallery {
+    padding-top: 79px;
+    padding-bottom: 82px;
+    background-image: url(../img/gal-fon-1024.jpg);
+  }
+
+  .gallery-title {
+    margin-bottom: 13px;
+  }
+
+  .gallery__wrap {
+    flex-direction: column;
+  }
+
+  .gallery__check {
+    width: calc(150 / 924 * 100%);
+    width: 100%;
+    margin-bottom: 27px;
+  }
+
+  .gallery__picture {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-image: url(../img/gal-fon-765.jpg);
+  }
+
+  .gallery__check {
+    width: calc(160 / 668 * 100%);
+  }
+
+  .gallery__item {
+    width: calc(100% / 3 - 68px / 3);
+  }
+
+  .gallery__list {
+    gap: 34px;
+  }
+}
+
+@media (max-width: 576px) {
+  .gallery {
+    padding-top: 51px;
+    padding-bottom: 50px;
+    background-image: url(../img/gal-fon-320.jpg);
+  }
+
+  .gallery-title {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 38px;
+    margin-bottom: 10px;
+  }
+
+  .gallery__check {
+    width: 100%;
+    margin-bottom: 26px;
+  }
+
+  .gallery__list {
+    flex-direction: column;
+    width: 100%;
+    gap: 30px;
+  }
+
+  .gallery__item {
+    width: 100%;
+  }
+}

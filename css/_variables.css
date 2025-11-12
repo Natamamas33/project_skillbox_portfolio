@@ -1,0 +1,23 @@
+:root {
+  /* шрифты */
+  --def-fs: 16px;
+  --def-lh: 32px;
+
+  /* цвет */
+  --black: #000000;
+  --black-li: #333;
+  --white: #fff;
+  --violet: #7943a4;
+  --violet-li: #c283f3;
+  --violet-two: #9d5cd0;
+  --violet-three: #d1a9f0;
+  --grey: #999;
+  --grey-wh: #ececec;
+  --grey-li: #cacaca;
+  --dark-grey: #333;
+
+  /* container */
+  --container-max-widht: 1700px;
+  --container-padding: 50px;
+  --container-padding-mob: 15px;
+}

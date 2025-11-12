@@ -1,0 +1,158 @@
+.projects {
+  padding-top: 40px;
+  padding-bottom: 66px;
+}
+
+.projects-title {
+  margin-bottom: 16px;
+}
+
+.projects-text {
+  max-width: 1080px;
+  margin-bottom: 30px;
+}
+
+.projects-subtitle {
+  margin-bottom: 16px;
+}
+
+.projects__link {
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+  gap: 34px;
+}
+
+.projects__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--grey-li);
+  padding: 27px;
+  transition: outline 0.3s ease-in-out;
+}
+
+.projects__item:focus {
+  outline: none;
+}
+
+.projects__item:focus-visible {
+  border-color: var(--violet);
+}
+
+.projects__item:hover {
+  outline: 1px solid var(--violet-two);
+}
+
+.projects__item:active {
+  border-color: var(--violet);
+}
+
+.projects__image {
+  display: block;
+}
+
+.projects__link-part:focus {
+  outline: none;
+}
+
+.projects__link-part:focus-visible {
+  filter: invert(50%);
+}
+
+.projects__link-part:hover {
+  filter: invert(50%);
+}
+
+.projects__link-part:active {
+  filter: invert(80%);
+}
+
+@media (max-width: 1024px) {
+  .projects {
+    padding-top: 37px;
+    padding-bottom: 79px;
+  }
+
+  .projects-text {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-text {
+    margin-bottom: 28px;
+  }
+
+  .projects-subtitle {
+    margin-bottom: 32px;
+  }
+
+  .projects__item {
+    max-width: 316px;
+  }
+
+  .projects__image {
+    display: block;
+    width: 275px;
+  }
+}
+
+@media (max-width: 576px) {
+  .projects {
+    padding-top: 32px;
+    padding-bottom: 28px;
+  }
+
+  .projects-title {
+    margin-bottom: 12px;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 38px;
+  }
+
+  .projects-subtitle {
+    margin-bottom: 11px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 32px;
+  }
+
+  .projects-text {
+    margin-bottom: 51px;
+  }
+
+  .projects__link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .projects__link-part:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .projects__link-part {
+    max-width: 290px;
+  }
+
+  .contacts__add {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .projects__item {
+    max-width: 290px;
+    padding: 25px;
+  }
+
+  .projects__image {
+    display: inline-block;
+    width: 160px;
+    text-align: center;
+  }
+}

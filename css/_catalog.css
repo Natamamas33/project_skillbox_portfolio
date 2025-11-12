@@ -1,0 +1,148 @@
+.catalog {
+  padding-top: 82px;
+  padding-bottom: 62px;
+}
+
+.catalog-title {
+  margin-bottom: 16px;
+}
+
+.catalog-text {
+  max-width: 1080px;
+  margin-bottom: 38px;
+}
+
+.catalog__item {
+  display: flex;
+  width: 100%;
+
+}
+
+.catalog__item:not(:last-child) {
+  margin-bottom: 50px;
+}
+
+.painters {
+  display: flex;
+  align-items: flex-start;
+  column-gap: 50px;
+}
+
+.painters__image {
+  display: block;
+}
+
+.painters__descr {
+  width: 100%;
+}
+
+.painters__text {
+  width: calc(800 / 1600 * 100%);
+  padding-top: 117px;
+  padding-bottom: 110px;
+}
+
+.painters__time {
+  display: inline-block;
+  font-size: 12px;
+  margin-bottom: 6px;
+  color: var(--grey);
+}
+
+@media (max-width: 1430px) {
+
+  .catalog {
+    padding-top: 80px;
+    padding-bottom: 30px;
+  }
+
+  .catalog__item {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .painters {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .painters__image {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .painters__text {
+    width: 100%;
+    padding: 0;
+  }
+
+  .painters-subtitle {
+    margin-bottom: 6px;
+  }
+
+  .painters__time {
+    display: inline-block;
+    margin-bottom: 9px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .catalog {
+    padding-top: 80px;
+    padding-bottom: 63px;
+  }
+
+  .catalog__item:not(:last-child) {
+    margin-bottom: 46px;
+  }
+
+  .catalog-text {
+    margin-bottom: 41px;
+  }
+
+  .painters__image {
+    margin-bottom: 32px;
+  }
+
+  .painters-subtitle {
+    margin-bottom: 1px;
+  }
+
+  .painters__time {
+    margin-bottom: 5px;
+    display: inline-block;
+  }
+}
+
+@media (max-width: 576px) {
+  .catalog {
+    padding-top: 50px;
+    padding-bottom: 49px;
+  }
+
+  .catalog-title {
+    margin-bottom: 12px;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 38px;
+  }
+
+  .catalog__item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+
+  .catalog-text {
+    margin-bottom: 30px;
+  }
+
+  .painters__image {
+    margin-bottom: 20px;
+  }
+
+  .painters-subtitle {
+    margin-bottom: 3px;
+  }
+}
